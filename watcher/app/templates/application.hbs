@@ -11,11 +11,15 @@
             {{#nav.item}}
                 {{#nav.link-to "about"}}about{{/nav.link-to}}
             {{/nav.item}}
-            {{#unless this.isLoggedIn}}
+            {{#if session.isAuthenticated}}
                 {{#nav.item}}
                     {{#nav.link-to "logout"}}log out{{/nav.link-to}}
                 {{/nav.item}}
-            {{/unless}}
+            {{else}}
+                {{#nav.item}}
+                    {{#nav.link-to "login"}}log in{{/nav.link-to}}
+                {{/nav.item}}
+            {{/if}}
         {{/navbar.nav}}
     {{/navbar.content}}
 {{/bs-navbar}}
