@@ -1,7 +1,9 @@
-<b>Character Search</b>
-{{#bs-form formLayout="inline" onSubmit=(action "search") as |form|}}
-    {{#form.group}}
-    {{form.element controlType="text" label="" placeholder="search for player name or id"}}
-    {{bs-button defaultText="ok" type="primary" buttonType="submit"}}
-    {{/form.group}}
-{{/bs-form}}
+<p><b>Character Search</b></p>
+<div class="row">
+    {{#bs-form formLayout="inline" onSubmit=(action "search") as |form|}}
+        {{#form.group}}
+        {{form.element controlType="text" label="" placeholder="search for player name or id"}}
+        {{bs-button defaultText="ok" type="primary" buttonType="submit"}}
+        {{/form.group}}
+    {{/bs-form}}
+</div>

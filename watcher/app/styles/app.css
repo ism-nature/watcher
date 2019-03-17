@@ -23,23 +23,36 @@ div.container {
             display: block;
         }
 
-        div.profile > div {
+        div.profile > div > div {
             display: inline-block;
         }
             /* Attributes */
-            div.profile > div > table > tr > td:nth-child(1) {
+            div.attributes > table > tr > td:nth-child(1) {
                 text-align: left;
             }
-            div.profile > div > table > tr > td:nth-child(2) {
+            div.attributes > table > tr > td:nth-child(2) {
                 text-align: right;
             }
 
-            div.profile > div > table > tr > td {
+            div.attributes > table > tr > td {
+                border: 1px solid lightblue;
+            }
+
+            /* Skills */
+
+            div.skills > table > tr > td:nth-child(1) {
+                text-align: left;
+            }
+            div.skills > table > tr > td:nth-child(2) {
+                text-align: right;
+            }
+
+            div.skills > table > tr > td {
                 border: 1px solid lightblue;
             }
 
         /* Inventory */
-        div.inventory > table > tr > td {
+        div.inventory > div > table > tr > td {
             border: 1px solid lightblue;
             vertical-align: center;
             text-align: center;
