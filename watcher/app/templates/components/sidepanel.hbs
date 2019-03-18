@@ -1,3 +1,9 @@
 <CharacterSearch/>
-<Profile/>
-<Inventory/>
+<Profile 
+    @position={{ character.position }}
+    @attributes={{ character.attributes }}
+    @skills={{ character.skills }}
+ />
+<Inventory
+    @inventory={{ character.inventory }}
+/>
