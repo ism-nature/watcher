@@ -1,23 +1,12 @@
 <b>Inventory</b>
 <div class="row">
     <table>
+        {{#each this.inventory as |item|}}
         <tr>
-            <td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td>
+            <td><img src="{{ item.image }}"></td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
         </tr>
-        <tr>
-            <td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td>
-        </tr>
-        <tr>
-            <td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td>
-        </tr>
-        <tr>
-            <td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td>
-        </tr>
-        <tr>
-            <td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td>
-        </tr>
-        <tr>
-            <td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td><td><InventoryItem/></td>
-        </tr>
+        {{/each}}
     </table>
 </div>

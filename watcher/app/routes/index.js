@@ -20,7 +20,10 @@ export default Route.extend({
             'skills': {
                 'accrobatics': 12,
                 'chemistry': 87
-            }
+            },
+            'inventory': [
+                {'id': '123', 'name': 'Exploding Banana', 'quantity': '15', 'image': 'https://static.turbosquid.com/Preview/2014/07/09__04_27_35/3.jpge3b4dbe7-cb06-4987-984d-cf65e157792cSmall.jpg'}
+            ]
         }    
     }
 });
